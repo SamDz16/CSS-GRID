@@ -5,18 +5,20 @@ body{
 }
 
 #content{
-    display: grid;
-    /* grid-template-columns: 33.3% 33.3% 33.3%; */
-    grid-template-columns: 1fr 2fr 1fr;
-    /* grid-template-columns: repeat(8, 1fr); */
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
+
+    /* CSS GRID */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    gap: 10px;
 }
 
 #content div{
     background: #3bbced;
-    padding: 30x;
-    height: 100px;
+    padding: 30px;
 }
 
 #content div:nth-child(even){
