@@ -5,6 +5,10 @@ body{
 }
 
 #content{
+    display: grid;
+    /* grid-template-columns: 33.3% 33.3% 33.3%; */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(8, 1fr); */
     max-width: 960px;
     margin: 0 auto;
 }
@@ -12,8 +16,9 @@ body{
 #content div{
     background: #3bbced;
     padding: 30x;
+    height: 100px;
 }
 
-#content-div:nth-child(even){
+#content div:nth-child(even){
     background: #777777;
 }
